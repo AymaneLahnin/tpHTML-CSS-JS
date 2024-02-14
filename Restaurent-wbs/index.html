@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- Linking to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lora?query=lora" type="text/css">
+    
+    <!-- Linking to Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link href="node_modules/bootstrap-icons/bootstrap-icons.svg" rel="stylesheet">
+
+    <!-- Linking to Bootstrap Icons CSS -->
+
+    <!-- Linking to custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+        <!--the navbar was made by bootstrap v5.3 -->
+
+    <header >
+
+        <!-- Navigation Bar -->
+        <nav id="header-nav" class="navbar navbar-default navbar-expand-md">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Brand Logo and Text -->
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <div id="logo-ig" class="mr-3"></div>
+                        <div><h2>Restaurant Angelo</h2></div>
+                    </a>
+                </div>
+                
+                <!-- Navbar Toggler Button for Mobile View -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Icon for the Toggler Button -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Collapsible Navigation Links -->
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <!-- Navigation Menu List -->
+                    <ul class="nav justify-content-end costum-menu">
+                        <!-- Menu Item 1 -->
+                        <li class="nav-item text-center">
+                            <!-- Link for Menu -->
+                            <a class="nav-link menu" aria-current="page" href="menu-categories.html">
+                            <img src="images/rst-menu.png" alt=""><br>Menu
+                            </a>
+                        </li>
+                        
+                        <!-- Menu Item 2 -->
+                        <li class="nav-item text-center">
+                            <!-- Link for About Us -->
+                            <a class="nav-link known dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- Icon for About Us -->
+                                <img src="images/aboutUs-icon.png" alt=""><br>À propos de nous
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light w-100">
+                                <p>This website, skillfully crafted using HTML and CSS, serves as a testament to my dedication in honing my web development abilities. Within its design, I've seamlessly integrated Bootstrap, showcasing my commitment to mastering this responsive framework. </p>
+                            </ul>
+                        </li>
+                        
+                        <!-- Menu Item 3 -->
+                        <li class="nav-item text-center dropdown">
+                            <!-- Link for Contact -->
+                            <a class="nav-link contact dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                <!-- Icon for Contact -->
+                                <img src="images/contact-icon.png" alt=""><br> Contact
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">📞: 0648349392</a></li>
+                                <li><a class="dropdown-item" href="https://mail.google.com/mail/u/0/#inbox">📧: aymanelahnin631@gmail.com</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+    </header>
+<!--Home page-->
+    <!--this part will be made by bootstrap v3-->
+    <div class="container" id="main-content">
+        <div class="jumbotron">
+            <img src="/images/xs-emi3.png" alt="" class="img-responsive visible-xs">
+        </div>
+        <div id="home-tiles" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="special-category.html"><div id="specials-tile"><span>specials</span></div></a>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <a href="https://goo.gl/maps/969kAaM6qFvybpHR8" target="_blank">
+                <div id="map-tile">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3389.0320838808093!2d-6.856131342382628!3d33.99759277873779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76c8c56681f79%3A0x6d21f8461c5f32c7!2sEcole%20Mohammadia%20d&#39;Ing%C3%A9nieurs!5e0!3m2!1sfr!2sma!4v1693102405149!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <span>map</span>
+                </div>
+              </a>
+            </div><!--end of home tile-->
+    </div><!--end of main content-->
+    <footer class="panel-footer">
+        <div class="container" id="page-bottom">
+            <div class="row">
+                <section id="horaireTrv" class="col-sm-4">
+                    <span > Horraire de travail:
+                        <br ><span class="glyphicon glyphicon-time"> Nos services sont disponible:</span>
+
+                         <br>24h/24h & 7j/7j</span>
+                <hr class="visible-xs">
+                </section>
+                <section id="adresse"class="col-sm-4">
+                    <span>
+                    <span>Nos adresses: <br><span class="glyphicon glyphicon-map-marker"> Av. Ibn Sina, Rabat</span> <br> 
+                    <span class="glyphicon glyphicon-envelope"> aymanelahnin@gmail.com</span>
+                <br> <span class="glyphicon glyphicon-earphone"> 0648349392 </span>
+
+                    </span>
+                <hr class="visible-xs">
+                </section>
+                <section id="description"class="col-sm-4">
+                    <span>Description: <br>this website is just an application of HTML,CSS and Bootstrap framework and not belonging to any restaurant</span>
+                <hr class="visible-xs">
+                </section>
+
+            </div>
+            <div>&copy; Tous droits réservés.</div>
+        </div>
+    </footer>
+    <!-- External JavaScript Libraries -->
+    <script src="bootstrap-5.3.1-dist/js/jquery-3.7.0.js"></script>
+        <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    
+
+    </body>
+</html>

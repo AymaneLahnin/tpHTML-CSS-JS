@@ -1,0 +1,371 @@
+body{
+    background-color: rgb(100, 17, 17);
+}
+#header-nav{
+    background-color: rgb(255, 166, 0);
+    border-radius: 0;
+    border: 0;
+    /*the borders are set to 0 so that we won't find the 2 colours separated*/
+}
+#logo-ig{
+    background: url("images/xsm-res.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-left: -30px;
+    
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: large;
+    font-family: Lora;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    font-size: large;
+    font-family: Lora;
+}
+.panel-footer{
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%; /*since we are using rows the100% will be taken from the container not the whole space*/
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    border-radius: 5px;
+    overflow: hidden;
+
+  }
+  .panel-footer:hover,#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px aliceblue
+  }
+  #adresse, #horaireTrv, #description{
+    line-height: 2;
+    font-size: medium;
+    
+  }
+  
+#menu-tile{
+    background: url("images/menuImg .jpg") no-repeat;
+    background-position: center;
+    
+}
+#specials-tile{
+    background: url("images/specialImg.jpg");
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    background-color: black;
+    color: aliceblue;
+    opacity: .7;/*for the transparency of the bgcolor*/
+}
+
+
+
+
+.navbar-brand h2{ 
+    font-family:'Lora','serif'; 
+    
+    color: #1c4105;
+font-size: 1.5em;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 1px 1p;
+}
+nav{
+    height: 150px; ;
+}
+ ul{
+    color: #1c4105;
+ }
+ /* For  mobile screens */
+@media ((max-width: 767px) ){
+    .nav-item {
+        display: inline; /* Display each item on a new line */
+        margin-bottom: 15px; /* Add space between items */
+        margin: auto;
+    }
+    
+    .navbar-brand h2{
+        font-family:Lora;
+        font: size 100px;
+        margin: auto;
+    }
+    #logo-ig{
+        margin-left: auto;
+        background: url("images/res-xs.png") no-repeat;
+        margin-bottom: -50px;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    .nav{
+        background-color: #e7ebb3;
+    }
+    .navbar-toggler {
+        background-color: antiquewhite; /* Button background color */
+        border: none; /* Remove the default button border */
+        border-radius: 5px; /* Rounded corners */
+        padding: 8px 16px; /* Padding around the button text */
+        cursor: pointer; /* Show pointer cursor on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for background color change */
+      }
+    
+      .navbar-toggler:hover {
+        background-color: #6a6e72; /* Change background color on hover */
+      }
+    .jumbotron{        
+        background-image: url("images/emi3.png") ;
+        height: auto;
+        border: 0;
+        
+    }
+    .container .jumbotron {
+        
+        padding: 0;
+        border-radius: 6px;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 993px) {
+    .custom-menu  {
+        display: inline; /* Display items horizontally */
+        margin-right: 10px; /* Add space between items */
+
+    }
+    .nav-item{
+        display: inline;
+    }
+
+    #collapsable-nav{
+        margin-bottom: 30px;
+        margin-left: 250px;
+    }
+    .jumbotron{
+        background-image: url("images/Histprical.jpg");
+        height: 500px;
+        border-radius: 5px;
+    }
+}
+/*for medium screens*/
+@media((min-width:768px)and (max-width:992px)) {
+    #collapsable-nav{
+        margin: auto;
+    }
+    .nav{
+        height: auto;
+    }
+    .jumbotron{
+        background: url("images/Histprical.jpg");
+        height: 600px;
+        border-radius: 5px;
+    }
+    
+}
+.nav-link{
+    color: brown;
+    font-size:large;
+    font-family: 'Arial Narrow Bold';
+    font-weight: bolder;
+}
+#page-bottom > div:nth-child(2){
+    font-size: large;
+    text-align: center;
+    margin-top:  30px;
+}
+
+
+/*menu-categories*/
+#ctgBreakfast-tile span, #ctgLunch-tile span, #ctgDinner-tile span{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    background-color: black;
+    color: aliceblue;
+    opacity: .7;
+}
+
+#ctgBreakfast-tile , #ctgLunch-tile , #ctgDinner-tile {
+    height: 250px;
+    width: 100%; /*since we are using rows the100% will be taken from the container not the whole space*/
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#ctgBreakfast-tile:hover , #ctgLunch-tile:hover , #ctgDinner-tile:hover {
+    box-shadow: 0 1px 5px 1px aliceblue
+
+}
+
+#ctgBreakfast-tile{
+    background: url("images/ctg-breakfast.jpg");
+    background-position: center;
+}
+
+#ctgLunch-tile{
+    background: url("images/ctg-lunch.jpg");
+    background-position: center;
+}
+#ctgDinner-tile{
+    background: url("images/ctg-dinner.jpg");
+    background-position: center;
+}
+h2{
+    font-size: large;
+    color: rgb(255, 166, 0)
+}
+
+/*special categories*/
+
+#bfs1-tile, #bfs2-tile, #bfs3-tile, #bfs4-tile, #bfs5-tile, #bfs6-tile, #lch1-tile, #lch2-tile,#lch3-tile, #lch4-tile,#lch5-tile,#dn1-tile,#dn2-tile,#dn3-tile,#dn4-tile,#dn5-tile{
+    height: 250px;
+    width: 100%; /*since we are using rows the100% will be taken from the container not the whole space*/
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#bfs1-tile{
+    background: url("images/breakfest.jpg");
+    background-position: center;
+}
+
+#bfs2-tile{
+    background: url("images/breakfast2.jpg");
+    background-position: center;
+}
+
+#bfs3-tile{
+    background: url("images/breakfast3.jpg");
+    background-position: center;
+}
+
+#bfs4-tile{
+    background: url("images/breakfast4.png");
+    background-position: center;
+}
+
+#bfs5-tile{
+    background: url("images/breakfast5.jpg");
+    background-position: center;
+}
+#bfs6-tile{
+    background: url("images/breakfast6.jpg");
+    background-position: center;
+
+}
+#bfs1-tile span, #bfs2-tile span, #bfs3-tile span, #bfs4-tile span, #bfs5-tile span, #bfs6-tile span{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    background-color: black;
+    color: aliceblue;
+    opacity: .7;
+}
+
+#lch1-tile{
+    background: url("images/lunch1.jpg");
+    background-position: center;
+
+}
+#lch2-tile{
+    background: url("images/lunch2.jpg");
+    background-position: center;
+
+}
+
+#lch3-tile{
+    background: url("images/lunch3.jpg");
+    background-position: center;
+
+}
+
+#lch4-tile{
+    background: url("images/lunch4.jpg");
+    background-position: center;
+
+}
+
+#lch5-tile{
+    background: url("images/lunch5.jpg") no-repeat;
+    background-position: center;
+
+}
+
+#lch1-tile span, #lch2-tile span, #lch3-tile span, #lch4-tile span, #lch5-tile span, #lch6-tile span{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    background-color: black;
+    color: aliceblue;
+    opacity: .7;
+}
+
+#dn1-tile span, #dn2-tile span, #dn3-tile span, #dn4-tile span, #dn5-tile span{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    background-color: black;
+    color: aliceblue;
+    opacity: .7;
+}
+
+#dn1-tile{
+    background: url("images/dinner1.jpg");
+    background-position: center;
+}
+
+#dn2-tile{
+    background: url("images/dinner2.jpg");
+    background-position: center;
+}
+#dn3-tile{
+    background: url("images/dinner3.jpg");
+    background-position: center;
+}
+#dn4-tile{
+    background: url("images/dinner4.jpg");
+    background-position: center;
+}
+#dn5-tile{
+    background: url("images/dinner5.jpg");
+    background-position: center;
+}
+
